@@ -5,88 +5,48 @@
           box-sizing: border-box;
 }
 
-.header {
-  width: 90%;
-  height: 100px;
-  margin: 30px auto;
-}
-
 .wrapper {
+  width: 1200px;
+  height: 100vh;
+  margin: 20px auto;
+}
+
+.header {
+  width: 80%;
+  height: 100px;
+  margin: 10px auto;
+}
+
+.header__btn {
+  font-size: 20px;
+  width: 80px;
+  cursor: pointer;
+}
+
+.header__btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.picture {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 1440px;
-  height: 70vh;
+  width: 400px;
+  height: 400px;
+  margin: auto;
 }
 
-.wrapper__showNumbers {
-  -ms-flex-preferred-size: 80%;
-      flex-basis: 80%;
-  height: 100px;
+.picture__title {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.picture__quiz {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
   border: 1px solid black;
-}
-
-.wrapper__putNumbers {
-  -ms-flex-preferred-size: 80%;
-      flex-basis: 80%;
-  height: 100px;
-  border: 1px solid black;
-}
-
-.wrapper__points {
-  -ms-flex-preferred-size: 80%;
-      flex-basis: 80%;
-  height: 100px;
-  border: 1px solid black;
-}
-
-.showNumbers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.showNumbers div {
-  -ms-flex-preferred-size: 10%;
-      flex-basis: 10%;
-  height: 90%;
-  border: 1px solid red;
-}
-
-.putNumbers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.putNumbers div {
-  -ms-flex-preferred-size: 7%;
-      flex-basis: 7%;
-  height: 90%;
-  border: 1px solid red;
 }
 /*# sourceMappingURL=main.css.map */
