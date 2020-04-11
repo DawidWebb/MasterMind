@@ -1,28 +1,14 @@
 class Data {
   constructor() {
-    this.numbers = [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20,
+    this.drawColors = [
+      { id: 0, color: "red" },
+      { id: 1, color: "blue" },
+      { id: 2, color: "green" },
+      { id: 3, color: "black" },
+      { id: 4, color: "yellow" },
+      { id: 5, color: "orange" },
+      { id: 6, color: "white" },
+      { id: 7, color: "grey" },
     ];
-    this.maths = [{}];
   }
 }

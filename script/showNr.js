@@ -5,11 +5,19 @@ class ShowNr extends Data {
     this.headerBtn = document
       .querySelector(".header__btn")
       .addEventListener("click", this.randomNumbers.bind(this));
-    this.divs = document.querySelectorAll("picture__quiz");
+    this.divs = document.querySelectorAll(".picture__quiz");
   }
   randomNumbers() {
-    const numbers = Math.floor(Math.random(this.numbers) * this.numbers.length);
-    console.log(numbers);
+    let i;
+
+    for (i = 0; i < this.divs.length; i++) {
+      this.divs[i].style.backgroundColor = `${
+        this.drawColors[
+          Math.floor(Math.random(this.drawColors) * this.drawColors.length)
+        ].color
+      }`;
+    }
+    const checkNr = new CheckNr();
   }
 }
 const showNr = new ShowNr();
