@@ -10,5 +10,6 @@ class Data {
       { id: 6, color: "white" },
       { id: 7, color: "grey" },
     ];
+    this.shownNumbers = [];
   }
 }

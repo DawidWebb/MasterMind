@@ -17,7 +17,11 @@
     }
   }
 }
-
+.action {
+  // background-color: transparent;
+  opacity: 0;
+  transition: 0.7s;
+}
 .picture {
   display: flex;
   flex-wrap: wrap;
