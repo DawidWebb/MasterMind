@@ -30,8 +30,6 @@
 
 .action {
   background-color: red;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
 }
 
 .picture {
