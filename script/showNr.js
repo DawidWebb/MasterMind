@@ -1,30 +1,29 @@
 class ShowNr extends Data {
   constructor(props) {
     super(props);
-
+    // this.checkNr = new CheckNr();
     this.headerBtn = document
       .querySelector(".header__btn")
       .addEventListener("click", this.randomNumbers.bind(this));
     this.divs = document.querySelectorAll(".picture__quiz");
+    this.i;
   }
   randomNumbers() {
-    let i;
-    for (i = 0; i < this.divs.length; i++) {
-      this.divs[i].textContent = `${
+    this.shownNumbers = [];
+    for (this.i = 0; this.i < this.divs.length; this.i++) {
+      this.divs[this.i].textContent = `${
         this.drawColors[
           Math.floor(Math.random(this.drawColors) * this.drawColors.length)
         ].id
       }`;
 
-      this.divs[i].style.backgroundColor = `${
-        this.drawColors[this.divs[i].textContent].color
+      this.divs[this.i].style.backgroundColor = `${
+        this.drawColors[this.divs[this.i].textContent].color
       }`;
-      this.shownNumbers.push(this.divs[i].textContent);
-      console.log(this.shownNumbers);
-      console.log(this.shownNumbers[15]);
     }
-
-    const checkNr = new CheckNr();
+    for (this.i = 0; this.i < this.divs.length; this.i++) {
+      this.shownNumbers.push(this.divs[this.i].textContent);
+    }
   }
 }
-const showNr = new ShowNr();
+// const showNr = new ShowNr();

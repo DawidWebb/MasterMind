@@ -1,10 +1,15 @@
 class CheckNr extends ShowNr {
   constructor(props) {
     super(props);
-
-    this.divs = document.addEventListener("click", this.checkColor.bind(this));
+    // this.divs = document.querySelectorAll(".picture__quiz");
+    this.divs = document.querySelectorAll(".picture__quiz");
+    this.divs.forEach((div) => {
+      div.addEventListener("click", this.checkColor(div));
+    });
   }
-  checkColor() {
-    console.log("ok");
-  }
+  checkColor = (div) => {
+    // console.log(div.textContent);
+  };
 }
+
+const checkNr = new CheckNr();
