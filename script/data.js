@@ -11,5 +11,6 @@ class Data {
       { id: 7, color: "grey" },
     ];
     this.shownNumbers = [];
+    this.clickNumbers = [];
   }
 }

@@ -26,12 +26,14 @@
   width: 400px;
   height: 400px;
   margin: auto;
+  background-color: whitesmoke;
   &__title {
     flex-basis: 100%;
   }
   &__quiz {
     flex-basis: 25%;
     height: 25%;
+    color: transparent;
     border: 1px solid black;
   }
 }
