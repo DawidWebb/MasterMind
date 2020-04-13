@@ -6,27 +6,31 @@ class CheckNr extends ShowNr {
     });
   }
   showEl = (e) => {
-    console.log(e);
+    // console.log(e);
     let click = e.target.textContent;
+    const targets = [];
     e.target.style.backgroundColor = `${
       this.drawColors[parseInt(e.target.textContent)].color
     }`;
     if (this.clickNumbers.length < 1) {
       this.clickNumbers.push(click);
+      targets.push(e.target);
     } else if (this.clickNumbers.length === 1) {
       this.clickNumbers.push(click);
+      targets.push(e.target);
       if (this.clickNumbers[0] === this.clickNumbers[1]) {
-        // alert("Hurra!");
         this.clickNumbers = [];
       } else {
-        // alert("Niee");
+        alert("Niee");
+        targets.forEach((target) => {
+          target.style.backgroundColor = "transparent";
+        });
         this.clickNumbers = [];
-        this.divs.forEach((div) => (div.style.backgroundColor = "transparent"));
       }
     } else {
       return;
     }
-    console.log(this.clickNumbers);
+    // console.log(this.clickNumbers);
   };
 }
 

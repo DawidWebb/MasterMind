@@ -7,7 +7,7 @@ class Data {
       { id: 3, color: "black" },
       { id: 4, color: "yellow" },
       { id: 5, color: "orange" },
-      { id: 6, color: "white" },
+      { id: 6, color: "purple" },
       { id: 7, color: "grey" },
     ];
     this.shownNumbers = [];
