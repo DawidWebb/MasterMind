@@ -17,10 +17,11 @@ class ShowNr extends Data {
       }`;
       div.style.backgroundColor = `${this.drawColors[div.textContent].color}`;
       this.shownNumbers.push(div.textContent);
-      console.log(this.shownNumbers);
     });
     setTimeout(this.nonShow.bind(this), 2000);
+    console.log(this.shownNumbers);
   }
+
   nonShow = () => {
     this.divs.forEach((div) => {
       div.style.backgroundColor = "transparent";
