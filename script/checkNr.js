@@ -4,9 +4,10 @@ class CheckNr extends ShowNr {
     this.divs.forEach((div) => {
       div.addEventListener("click", this.showEl);
     });
+    this.points = document.querySelector(".info__pkt");
+    this.points.textContent = `${this.point}`;
   }
   showEl = (e) => {
-    // console.log(e);
     let click = e.target.textContent;
     const targets = [];
     e.target.style.backgroundColor = `${
@@ -19,6 +20,8 @@ class CheckNr extends ShowNr {
       this.clickNumbers.push(click);
       targets.push(e.target);
       if (this.clickNumbers[0] === this.clickNumbers[1]) {
+        this.point = this.point + 2;
+        this.points.textContent = `${this.point}`;
         this.clickNumbers = [];
       } else {
         alert("Niee");

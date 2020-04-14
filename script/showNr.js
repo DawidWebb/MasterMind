@@ -8,6 +8,7 @@ class ShowNr extends Data {
   }
   randomNumbers() {
     this.shownNumbers = [];
+    this.point = 0;
     this.divs.forEach((div) => {
       div.textContent = `${
         this.drawColors[
@@ -16,6 +17,7 @@ class ShowNr extends Data {
       }`;
       div.style.backgroundColor = `${this.drawColors[div.textContent].color}`;
       this.shownNumbers.push(div.textContent);
+      console.log(this.shownNumbers);
     });
     setTimeout(this.nonShow.bind(this), 2000);
   }

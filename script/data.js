@@ -12,5 +12,6 @@ class Data {
     ];
     this.shownNumbers = [];
     this.clickNumbers = [];
+    this.point = 0;
   }
 }

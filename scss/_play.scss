@@ -1,16 +1,32 @@
 .wrapper {
+  display: grid;
+  grid-template-columns: 300px 2fr auto;
+  grid-template-rows: 100px 1fr auto;
   width: 1200px;
   height: 100vh;
-  margin: 20px auto;
+  max-height: 100vh;
+  margin: 0 auto;
 }
 .header {
+  grid-column: 1/1;
+  grid-row: 2/2;
+  position: relative;
   width: 80%;
-  height: 100px;
-  margin: 10px auto;
+  height: 60px;
+  margin: 0 auto;
+
   &__btn {
+    position: absolute;
+    top: 90%;
+    left: 50%;
     font-size: 20px;
-    width: 80px;
+    width: 180px;
+    height: 60px;
     cursor: pointer;
+    background-color: cornflowerblue;
+    color: darkblue;
+    border: 1px solid black;
+    border-radius: 10px;
     &:hover {
       background-color: black;
       color: white;
@@ -21,19 +37,38 @@
   background-color: red;
 }
 .picture {
-  display: flex;
-  flex-wrap: wrap;
+  grid-column: 2;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 400px;
   height: 400px;
-  margin: auto;
+  margin: 100px auto;
   background-color: whitesmoke;
-  &__title {
-    flex-basis: 100%;
-  }
+
   &__quiz {
-    flex-basis: 25%;
-    height: 25%;
     color: transparent;
     border: 1px solid black;
   }
+}
+.info {
+  grid-column: 3/4;
+  grid-row: 2/3;
+
+  text-align: center;
+  &__title {
+    margin-top: 20px;
+  }
+  &__pkt {
+    margin-top: 100px;
+    font-size: 40px;
+    color: darkblue;
+    background-color: white;
+  }
+}
+.foot {
+  grid-column: 1/4;
+  grid-row: 4;
+  background-color: black;
+  height: 60px;
 }
