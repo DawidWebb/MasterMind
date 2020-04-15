@@ -7,18 +7,21 @@ class ShowColors extends Data {
     this.divs = [...document.querySelectorAll(".picture__quiz")];
   }
   randomColors() {
+    this.showNumbers = [];
+    this.clickNumbers = [];
     this.divs.forEach((div) => {
-      (div.style.backgroundColor = `${
+      div.style.backgroundColor = `${
         this.drawColors[
           Math.floor(Math.random(this.drawColors) * this.drawColors.length)
         ].color
-      }`),
-        (div = {
-          id: this.showNumbers.length,
-          color: div.style.backgroundColor,
-          isClicked: false,
-          isCorrect: false,
-        });
+      }`;
+      div = {
+        id: this.showNumbers.length,
+        color: div.style.backgroundColor,
+        isClicked: false,
+        isCorrect: false,
+      };
+
       this.showNumbers.push(div);
       setTimeout(this.nonShow.bind(this), 2000);
     });

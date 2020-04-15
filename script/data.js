@@ -13,5 +13,6 @@ class Data {
     this.showNumbers = [];
     this.clickNumbers = [];
     this.point = 0;
+    this.wins = [];
   }
 }
