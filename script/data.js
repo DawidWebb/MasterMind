@@ -10,7 +10,7 @@ class Data {
       { id: 6, color: "purple" },
       { id: 7, color: "grey" },
     ];
-    this.shownNumbers = [];
+    this.showNumbers = [];
     this.clickNumbers = [];
     this.point = 0;
   }

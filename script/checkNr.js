@@ -1,4 +1,4 @@
-class CheckNr extends ShowNr {
+class CheckNr extends ShowColors {
   constructor(props) {
     super(props);
     this.divs.forEach((div) => {
