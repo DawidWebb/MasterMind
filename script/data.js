@@ -10,9 +10,16 @@ class Data {
       { id: 6, color: "purple" },
       { id: 7, color: "grey" },
     ];
+    this.winsInfo = [
+      "Brawo!",
+      "Jesteś niesamowita/ty!!!",
+      "Ale masz super pamięć!",
+      "Swietnie...jeszcze raz?",
+      "No to sie nazywa gracz:)",
+    ];
     this.showNumbers = [];
     this.clickNumbers = [];
-    this.point = 0;
+    this.winPoints = 0;
     this.wins = [];
   }
 }

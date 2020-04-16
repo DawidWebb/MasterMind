@@ -1,7 +1,7 @@
 class CheckColors extends ShowColors {
   constructor(props) {
     super(props);
-    this.points = document.querySelector(".info__pkt");
+
     this.divs.forEach((div) => {
       div.addEventListener("click", this.drawColor);
     });
@@ -11,7 +11,7 @@ class CheckColors extends ShowColors {
       this.showNumbers[this.divs.indexOf(e.target)].color
     }`;
     this.clickNumbers.push(this.divs.indexOf(e.target));
-
+    this.points.textContent = `${this.winPoints}`;
     this.checkDiff();
   };
   checkDiff = () => {
@@ -20,16 +20,29 @@ class CheckColors extends ShowColors {
         this.showNumbers[this.clickNumbers[0]].color ===
         this.showNumbers[this.clickNumbers[1]].color
       ) {
+        this.winPoints = this.winPoints + 2;
+        this.points.textContent = `${this.winPoints}`;
+        this.wins.push(this.clickNumbers);
         this.clickNumbers = [];
       } else {
         setTimeout(this.showWait.bind(this), 200);
       }
     }
+    this.showWins.bind(this);
   };
   showWait = () => {
     this.divs[this.clickNumbers[0]].style.backgroundColor = "transparent";
     this.divs[this.clickNumbers[1]].style.backgroundColor = "transparent";
     this.clickNumbers = [];
+  };
+  showWins = () => {
+    if (this.wins.lenght === this.divs.length / 2) {
+      this.clickNumbers = [];
+      this.divs.style.opacity = 0.7;
+      this.footInfo.textContent = `${
+        this.winsInfo[Math.floor(Math.random(this.winsInfo.length))]
+      }`;
+    }
   };
 }
 
