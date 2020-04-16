@@ -15,6 +15,9 @@ class ShowColors extends Data {
     this.points.textContent = `${this.winPoints}`;
     this.footInfo.textContent = "";
     this.divs.forEach((div) => {
+      div.style.opacity = 1;
+    });
+    this.divs.forEach((div) => {
       div.style.backgroundColor = `${
         this.drawColors[
           Math.floor(Math.random(this.drawColors) * this.drawColors.length)
@@ -23,8 +26,6 @@ class ShowColors extends Data {
       div = {
         id: this.showNumbers.length,
         color: div.style.backgroundColor,
-        isClicked: false,
-        isCorrect: false,
       };
 
       this.showNumbers.push(div);

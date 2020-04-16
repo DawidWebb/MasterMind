@@ -24,11 +24,13 @@ class CheckColors extends ShowColors {
         this.points.textContent = `${this.winPoints}`;
         this.wins.push(this.clickNumbers);
         this.clickNumbers = [];
+        // this.showWins.bind(this);
       } else {
         setTimeout(this.showWait.bind(this), 200);
       }
     }
-    this.showWins.bind(this);
+    this.showWins();
+    console.log(this.wins);
   };
   showWait = () => {
     this.divs[this.clickNumbers[0]].style.backgroundColor = "transparent";
@@ -36,11 +38,15 @@ class CheckColors extends ShowColors {
     this.clickNumbers = [];
   };
   showWins = () => {
-    if (this.wins.lenght === this.divs.length / 2) {
+    if (this.wins.length === this.divs.length / 2) {
       this.clickNumbers = [];
-      this.divs.style.opacity = 0.7;
+      this.divs.forEach((div) => {
+        div.style.opacity = 0.3;
+      });
       this.footInfo.textContent = `${
-        this.winsInfo[Math.floor(Math.random(this.winsInfo.length))]
+        this.winsInfo[
+          Math.floor(Math.random(this.winsInfo) * this.winsInfo.length)
+        ]
       }`;
     }
   };

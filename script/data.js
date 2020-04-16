@@ -11,11 +11,11 @@ class Data {
       { id: 7, color: "grey" },
     ];
     this.winsInfo = [
-      "Brawo!",
-      "Jesteś niesamowita/ty!!!",
-      "Ale masz super pamięć!",
-      "Swietnie...jeszcze raz?",
-      "No to sie nazywa gracz:)",
+      "!!!WYGRANA!!! -- Brawo!",
+      "!!!WYGRANA!!! -- Jesteś niesamowita/ty!!!",
+      "!!!WYGRANA!!! -- Ale masz super pamięć!",
+      "!!!WYGRANA!!! -- Świetnie...jeszcze raz?",
+      "!!!WYGRANA!!! -- No to sie nazywa gracz:)",
     ];
     this.showNumbers = [];
     this.clickNumbers = [];
