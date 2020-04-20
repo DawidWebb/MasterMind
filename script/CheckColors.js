@@ -48,6 +48,7 @@ class CheckColors extends ShowColors {
           Math.floor(Math.random(this.winsInfo) * this.winsInfo.length)
         ]
       }`;
+      setTimeout(location.reload(), 3000);
     }
   };
 }

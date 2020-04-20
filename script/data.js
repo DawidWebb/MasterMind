@@ -9,6 +9,14 @@ class Data {
       { id: 5, color: "orange" },
       { id: 6, color: "purple" },
       { id: 7, color: "grey" },
+      { id: 8, color: "red" },
+      { id: 9, color: "blue" },
+      { id: 10, color: "green" },
+      { id: 11, color: "black" },
+      { id: 12, color: "yellow" },
+      { id: 13, color: "orange" },
+      { id: 14, color: "purple" },
+      { id: 15, color: "grey" },
     ];
     this.winsInfo = [
       "!!!WYGRANA!!! -- Brawo!",
