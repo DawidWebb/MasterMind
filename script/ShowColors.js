@@ -4,7 +4,7 @@ class ShowColors extends Data {
     this.headerBtn = document
       .querySelector(".header__btn")
       .addEventListener("click", this.randomColors.bind(this));
-    this.time = document.querySelector(".info__pkt");
+
     this.footInfo = document.querySelector(".foot__info");
     this.divs = document.querySelectorAll(".picture__quiz");
     this.divs = [...this.divs];
