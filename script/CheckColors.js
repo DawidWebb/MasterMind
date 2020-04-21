@@ -11,7 +11,7 @@ class CheckColors extends ShowColors {
       this.showNumbers[this.divs.indexOf(e.target)].color
     }`;
     this.clickNumbers.push(this.divs.indexOf(e.target));
-    this.points.textContent = `${this.winPoints}`;
+
     this.checkDiff();
   };
   checkDiff = () => {
@@ -20,8 +20,6 @@ class CheckColors extends ShowColors {
         this.showNumbers[this.clickNumbers[0]].color ===
         this.showNumbers[this.clickNumbers[1]].color
       ) {
-        this.winPoints = this.winPoints + 2;
-        this.points.textContent = `${this.winPoints}`;
         this.wins.push(this.clickNumbers);
         this.clickNumbers = [];
         // this.showWins.bind(this);
@@ -30,7 +28,6 @@ class CheckColors extends ShowColors {
       }
     }
     this.showWins();
-    console.log(this.wins);
   };
   showWait = () => {
     this.divs[this.clickNumbers[0]].style.backgroundColor = "transparent";
@@ -48,7 +45,6 @@ class CheckColors extends ShowColors {
           Math.floor(Math.random(this.winsInfo) * this.winsInfo.length)
         ]
       }`;
-      setTimeout(location.reload(), 3000);
     }
   };
 }
