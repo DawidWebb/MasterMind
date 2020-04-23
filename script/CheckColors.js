@@ -37,6 +37,7 @@ class CheckColors extends ShowColors {
   showWins = () => {
     if (this.wins.length === this.divs.length / 2) {
       this.clickNumbers = [];
+      this.game();
       this.divs.forEach((div) => {
         div.style.opacity = 0.3;
       });

@@ -1,5 +1,6 @@
 class Data {
   constructor() {
+    this.infoPkt = document.querySelector(".info__pkt");
     this.drawColors = [
       { id: 0, color: "red" },
       { id: 1, color: "blue" },
@@ -29,5 +30,37 @@ class Data {
     this.clickNumbers = [];
     this.winPoints = 0;
     this.wins = [];
+
+    this.time = 0;
+    this.active = false;
+    this.idI;
+    this.points = [];
+
+    this.game();
+    this.timer();
+    this.start();
+    this.reset();
   }
+  game = () => {
+    clearInterval(this.idI);
+  };
+
+  timer = () => {
+    clearInterval(this.idI);
+    this.reset();
+    this.idI = setInterval(this.start, 10);
+  };
+
+  start = () => {
+    this.time++;
+    this.infoPkt.textContent = (this.time / 100).toFixed(2);
+  };
+
+  reset = () => {
+    this.points = [];
+    this.time = 0;
+    this.infoPkt.textContent = "---";
+    this.active = false;
+    clearInterval(this.idI);
+  };
 }

@@ -10,6 +10,7 @@ class ShowColors extends Data {
     this.divs = [...this.divs];
   }
   randomColors() {
+    this.timer();
     const newColors = this.drawColors.slice(0, this.drawColors.length);
     this.showNumbers = [];
     this.clickNumbers = [];
