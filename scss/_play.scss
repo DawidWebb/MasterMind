@@ -75,10 +75,13 @@
   grid-column: 1/4;
   grid-row: 4;
   background-color: black;
-  height: 10vh;
+  height: 20vh;
   margin-bottom: 50px;
   &__info {
     color: white;
     text-align: center;
+    padding-top: 20px;
+    line-height: 30px;
+    font-size: 22px;
   }
 }

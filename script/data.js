@@ -26,6 +26,21 @@ class Data {
       "!!!WYGRANA!!! -- Świetnie...jeszcze raz?",
       "!!!WYGRANA!!! -- No to sie nazywa gracz:)",
     ];
+    this.winsInfo2 = [
+      "Istnieje gatunek meduz (Turritopsis dohrnii), który uważany jest za nieśmiertelny. Organizmy tych zwierząt potrafią świetnie regenerować komórki swojego ciała, zamieniając je na inny typ (transdyferencjacja).",
+      "Pszczoły potrafią tańczyć. Poprzez zataczane w powietrzu okręgi sygnalizują nowe źródło pyłku czy nektaru.",
+      "Niektóre gatunki jaszczurek bazyliszków potrafią przebiec po wodzie długie dystanse, gdy uciekają przed drapieżnikiem, dlatego potocznie nazywane są jaszczurkami Jezusa Chrystusa.",
+      "Wielbłądy to zwierzęta bardzo dobrze gospodarujące wodą we własnych organizmach. Tolerują ubytek wody nawet do 30% masy ciała.",
+      "To kozy były pierwszymi zwierzętami, którymi opiekowali się ludzie już ponad 9000 lat temu",
+      "Prawdopodobnie nie istnieją dwa identycznie nakrapiane tygrysy, ponieważ paski zdobią zarówno ich futra jak i skórę i są unikalne dla każdego osobnika.",
+      "Siła nóg tygrysa jest tak wielka, że nawet gdy zwierzę umiera, są one w stanie utrzymać jego martwe ciało w pionie.",
+      "Ponoć, aby uniknąć zaciśnięcia się szczęk i połknięcia przez krokodyla, wystarczy wcisnąć palec w jego oko.",
+      "Supermocą pcheł jest ich zdolność do przeskoczenia odległości wynoszącej ponad 200 razy więcej od wysokości ich ciała.",
+      "Choć motyle posiadają dwoje oczu, które wyposażone są w tysiące soczewek, to widzą niewiele kolorów – zaledwie zielony, żółty i czerwony.",
+      "W temacie oczu specjalistami są ślimaki, które potrafią zregenerować oko, jeśli je stracą.",
+      "Najbardziej popularną rasą psa jest labrador. Jego łagodna natura, energiczność i inteligencja wykorzystywane są w służbach policyjnych, a także przy pomocy niesionej osobom niepełnosprawnym. Są to również psy, które potrafią utrzymywać świetne relacje z dziećmi.",
+      "Psy i koty można zidentyfikować po niepowtarzalnym odcisku nosa.",
+    ];
     this.showNumbers = [];
     this.clickNumbers = [];
     this.winPoints = 0;

@@ -42,8 +42,8 @@ class CheckColors extends ShowColors {
         div.style.opacity = 0.3;
       });
       this.footInfo.textContent = `${
-        this.winsInfo[
-          Math.floor(Math.random(this.winsInfo) * this.winsInfo.length)
+        this.winsInfo2[
+          Math.floor(Math.random(this.winsInfo2) * this.winsInfo2.length)
         ]
       }`;
     }
