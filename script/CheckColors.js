@@ -21,8 +21,15 @@ class CheckColors extends ShowColors {
         this.showNumbers[this.clickNumbers[1]].color
       ) {
         this.wins.push(this.clickNumbers);
+        // this.divs[this.clickNumbers[0]].removeEventListener(
+        //   "click",
+        //   this.drawColos
+        // );
+        // this.divs[this.clickNumbers[1]].removeEventListener(
+        //   "click",
+        //   this.drawColos
+        // );
         this.clickNumbers = [];
-        // this.showWins.bind(this);
       } else {
         setTimeout(this.showWait.bind(this), 200);
       }
