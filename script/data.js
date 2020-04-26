@@ -43,6 +43,7 @@ class Data {
     ];
     this.showNumbers = [];
     this.clickNumbers = [];
+    this.winNubmers = [];
     this.winPoints = 0;
     this.wins = [];
 

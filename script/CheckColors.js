@@ -3,7 +3,7 @@ class CheckColors extends ShowColors {
     super(props);
 
     this.divs.forEach((div) => {
-      div.addEventListener("click", this.drawColor);
+      div.addEventListener("click", this.drawColor, true);
     });
   }
   drawColor = (e) => {
@@ -11,8 +11,9 @@ class CheckColors extends ShowColors {
       this.showNumbers[this.divs.indexOf(e.target)].color
     }`;
     this.clickNumbers.push(this.divs.indexOf(e.target));
-
+    this.winNubmers.push(this.divs.indexOf(e.target));
     this.checkDiff();
+    console.log(this.winNubmers);
   };
   checkDiff = () => {
     if (this.clickNumbers.length === 2) {
@@ -21,18 +22,23 @@ class CheckColors extends ShowColors {
         this.showNumbers[this.clickNumbers[1]].color
       ) {
         this.wins.push(this.clickNumbers);
-        // this.divs[this.clickNumbers[0]].removeEventListener(
-        //   "click",
-        //   this.drawColos
-        // );
-        // this.divs[this.clickNumbers[1]].removeEventListener(
-        //   "click",
-        //   this.drawColos
-        // );
         this.clickNumbers = [];
+        this.divs[this.winNubmers[0]].removeEventListener(
+          "click",
+          this.drawColor,
+          true
+        );
+        this.divs[this.winNubmers[1]].removeEventListener(
+          "click",
+          this.drawColor,
+          true
+        );
+        this.winNubmers = [];
       } else {
         setTimeout(this.showWait.bind(this), 200);
+        this.winNubmers = [];
       }
+      console.log(this.wins);
     }
     this.showWins();
   };
