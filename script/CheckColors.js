@@ -13,7 +13,6 @@ class CheckColors extends ShowColors {
     this.clickNumbers.push(this.divs.indexOf(e.target));
     this.winNubmers.push(this.divs.indexOf(e.target));
     this.checkDiff();
-    console.log(this.winNubmers);
   };
   checkDiff = () => {
     if (this.clickNumbers.length === 2) {
@@ -38,7 +37,6 @@ class CheckColors extends ShowColors {
         setTimeout(this.showWait.bind(this), 200);
         this.winNubmers = [];
       }
-      console.log(this.wins);
     }
     this.showWins();
   };
