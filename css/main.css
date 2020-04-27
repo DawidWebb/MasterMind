@@ -19,6 +19,46 @@
   margin: 0 auto;
 }
 
+@media (orientation: landscape) and (max-width: 1024px) {
+  .wrapper {
+    width: 800px;
+    -ms-grid-columns: 200px 2fr auto;
+        grid-template-columns: 200px 2fr auto;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 800px) {
+  .wrapper {
+    width: 640px;
+    -ms-grid-columns: 150px 2fr auto;
+        grid-template-columns: 150px 2fr auto;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 640px) {
+  .wrapper {
+    width: 480px;
+    -ms-grid-columns: 100px 2fr auto;
+        grid-template-columns: 100px 2fr auto;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 800px) {
+  .wrapper {
+    width: 640px;
+    -ms-grid-columns: 150px 2fr auto;
+        grid-template-columns: 150px 2fr auto;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 640px) {
+  .wrapper {
+    width: 480px;
+    -ms-grid-columns: 100px 2fr auto;
+        grid-template-columns: 100px 2fr auto;
+  }
+}
+
 .nonShow {
   background-color: transparent;
 }
@@ -53,6 +93,43 @@
   color: white;
 }
 
+@media (orientation: landscape) and (max-width: 1024px) {
+  .header__btn {
+    left: 10%;
+    width: 140px;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 800px) {
+  .header__btn {
+    left: -10px;
+    width: 120px;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 640px) {
+  .header__btn {
+    left: -20px;
+    width: 100px;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 800px) {
+  .header__btn {
+    left: -30px;
+    width: 120px;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 640px) {
+  .header__btn {
+    left: -40px;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
 .action {
   background-color: red;
 }
@@ -71,6 +148,27 @@
   height: 400px;
   margin: auto;
   background-color: whitesmoke;
+}
+
+@media (orientation: landscape) and (max-width: 800px) {
+  .picture {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 800px) {
+  .picture {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 640px) {
+  .picture {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .picture__quiz {
@@ -93,11 +191,23 @@
   margin-top: 20px;
 }
 
+@media (orientation: portrait) and (max-width: 640px) {
+  .info__title {
+    font-size: 20px;
+  }
+}
+
 .info__pkt {
   margin-top: 80px;
   font-size: 40px;
   color: darkblue;
   background-color: white;
+}
+
+@media (orientation: portrait) and (max-width: 640px) {
+  .info__pkt {
+    font-size: 20px;
+  }
 }
 
 .foot {
@@ -117,5 +227,23 @@
   padding-top: 20px;
   line-height: 30px;
   font-size: 22px;
+}
+
+@media (orientation: landscape) and (max-width: 1024px) {
+  .foot__info {
+    font-size: 18px;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 640px) {
+  .foot__info {
+    font-size: 16px;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1024px) {
+  .foot {
+    padding: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -41,6 +41,13 @@ class Data {
       "W temacie oczu specjalistami są ślimaki, które potrafią zregenerować oko, jeśli je stracą.",
       "Najbardziej popularną rasą psa jest labrador. Jego łagodna natura, energiczność i inteligencja wykorzystywane są w służbach policyjnych, a także przy pomocy niesionej osobom niepełnosprawnym. Są to również psy, które potrafią utrzymywać świetne relacje z dziećmi.",
       "Psy i koty można zidentyfikować po niepowtarzalnym odcisku nosa.",
+      "Niektóre ze zwierząt potrafią liczyć. Należą do nich szympansy, kanarki i łyski. Ptaki potrafią na przykład stwierdzić, czy i ile jaj zostało podrzuconych do ich gniazda.",
+      "Wiewiórki są sadownikami z przypadku. Zagrzebując nasiona w ziemi, często zapominają ich dokładnej lokalizacji, przez co zasadzają mnóstwo nowych drzew.",
+      "Owce potrafią wyleczyć u siebie bóle brzucha i zakażenie pasożytami jelitowymi. Zmieniając dietę i poszukując roślin, w których składzie znajduje się saponina i tanina, pozbywają się nieprzyjemnych dolegliwości.",
+      "Lamparty mogą biec z prędkością 58 km/h.",
+      "Słonie mogą spędzać aż 16 godzin dziennie, jedynie jedząc. Dzieje się tak, gdyż są one roślinożercami, a ich organizmy wymagają przyswojenia sporych ilości pokarmu, aby zaspokoić głód.",
+      "Słonie potrafią odnaleźć wodę poprzez zmysł węchu już z odległości 3 mil.",
+      "onie są zdolne do empatii zarówno dla własnego gatunku jak i innych zwierząt. Znane są przypadki, gdy zwierzęta te pocieszały innych osobników swojego gatunku lub opłakiwały swoich towarzyszy (niekoniecznie tego samego gatunku).",
     ];
     this.showNumbers = [];
     this.clickNumbers = [];
