@@ -26,6 +26,7 @@ class Data {
       "!!!WYGRANA!!! -- Świetnie...jeszcze raz?",
       "!!!WYGRANA!!! -- No to sie nazywa gracz:)",
     ];
+
     this.winsInfo2 = [
       "Istnieje gatunek meduz (Turritopsis dohrnii), który uważany jest za nieśmiertelny. Organizmy tych zwierząt potrafią świetnie regenerować komórki swojego ciała, zamieniając je na inny typ (transdyferencjacja).",
       "Pszczoły potrafią tańczyć. Poprzez zataczane w powietrzu okręgi sygnalizują nowe źródło pyłku czy nektaru.",
