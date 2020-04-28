@@ -48,6 +48,7 @@
     width: 640px;
     -ms-grid-columns: 150px 2fr auto;
         grid-template-columns: 150px 2fr auto;
+    max-height: 200vh;
   }
 }
 
@@ -56,6 +57,18 @@
     width: 480px;
     -ms-grid-columns: 100px 2fr auto;
         grid-template-columns: 100px 2fr auto;
+    max-height: 200vh;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 480px) {
+  .wrapper {
+    width: 240px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 100px 1fr auto auto;
+        grid-template-rows: 100px 1fr auto auto;
+    max-height: 200vh;
   }
 }
 
@@ -69,9 +82,17 @@
   -ms-grid-row: 2;
   grid-row: 2/2;
   position: relative;
-  width: 80%;
+  width: 90%;
   height: 10vh;
   margin: 0 auto;
+}
+
+@media (orientation: portrait) and (max-width: 480px) {
+  .header {
+    -ms-grid-row: 1;
+    grid-row: 1/1;
+    margin-top: 10px;
+  }
 }
 
 .header__btn {
@@ -130,6 +151,17 @@
   }
 }
 
+@media (orientation: portrait) and (max-width: 480px) {
+  .header__btn {
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 80px;
+    height: 30px;
+    font-size: 18px;
+  }
+}
+
 .action {
   background-color: red;
 }
@@ -171,6 +203,18 @@
   }
 }
 
+@media (orientation: portrait) and (max-width: 480px) {
+  .picture {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    width: 200px;
+    height: 200px;
+  }
+}
+
 .picture__quiz {
   color: transparent;
   border: 1px solid black;
@@ -185,6 +229,16 @@
   grid-row: 2/3;
   height: 50vh;
   text-align: center;
+}
+
+@media (orientation: portrait) and (max-width: 480px) {
+  .info {
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+    -ms-grid-row: 3;
+    grid-row: 3/3;
+    height: 50vh;
+  }
 }
 
 .info__title {
@@ -210,6 +264,12 @@
   }
 }
 
+@media (orientation: portrait) and (max-width: 480px) {
+  .info__pkt {
+    margin-top: 30px;
+  }
+}
+
 .foot {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -219,6 +279,13 @@
   background-color: black;
   height: 20vh;
   margin-bottom: 50px;
+}
+
+@media (orientation: portrait) and (max-width: 480px) {
+  .foot {
+    height: 30vh;
+    margin-bottom: 10px;
+  }
 }
 
 .foot__info {
@@ -241,9 +308,9 @@
   }
 }
 
-@media (orientation: landscape) and (max-width: 1024px) {
-  .foot {
-    padding: 10px;
+@media (orientation: portrait) and (max-width: 480px) {
+  .foot__info {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=main.css.map */
